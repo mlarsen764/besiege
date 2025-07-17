@@ -40,3 +40,73 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Game Board Styles */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.castle-row {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.city-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.city-row {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.tile {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: #f0e6d2;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+.tile.conquered {
+  background: #b4e197;
+  border-color: #4e944f;
+}
+.tile.unconquered {
+  background: #f0e6d2;
+  border-color: #888;
+}
+.tile.army {
+  box-shadow: 0 0 8px 2px #2d6cdf;
+  border-color: #2d6cdf;
+}
+
+.wall-row, .base-row {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.wall-row.army, .base-row.army {
+  font-weight: bold;
+  color: #2d6cdf;
+}
+
+.info-panel {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
