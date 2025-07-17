@@ -1,0 +1,38 @@
+.tile {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #888;
+  margin: 2px;
+  font-size: 2rem;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.tile.conquered {
+  background: #b3e6b3;
+  border-color: #388e3c;
+}
+.tile.unconquered {
+  background: #f8d7da;
+  border-color: #c62828;
+}
+.tile.castle {
+  background: #ffe082;
+  border-color: #ffb300;
+}
+.tile.wall {
+  background: #b0bec5;
+  border-color: #607d8b;
+}
+.tile.base {
+  background: #bbdefb;
+  border-color: #1976d2;
+}
+.tile-label {
+  font-size: 0.8rem;
+  color: #333;
+} 
